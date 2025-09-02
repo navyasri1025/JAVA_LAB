@@ -1,4 +1,4 @@
-package Com.sample;
+package Com.u8;
 
 public class person {
     String name = "navya";
