@@ -1,0 +1,17 @@
+package oops.navya;
+
+public class areaCircle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        float radius = 3;
+        float pi = 3.14f;
+        float area = radius*radius*pi;
+        System.out.println("area of circle:"+area);
+	}
+
+}
+
+
+output:
+area of circle:28.26
