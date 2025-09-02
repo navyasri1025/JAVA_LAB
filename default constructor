@@ -1,0 +1,22 @@
+package Com.sample;
+
+public class person {
+    String name = "navya";
+    int age = 19;
+
+    person(){
+    System.out.println("Default Constructor");
+    }
+  public static void main(String[] args) {
+
+       person details = new person();
+       System.out.println("Name: " + details.name);
+       System.out.println("Age: " + details.age);
+  }
+
+}
+
+Output :
+Default Constructor
+Name: navya
+Age: 19
