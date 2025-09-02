@@ -1,0 +1,68 @@
+package com.u8;
+
+class RbiBank {
+    public double getRateOfInterest() {
+        return 5.0;
+    }
+}
+
+class Sbi extends RbiBank {
+    @Override
+    public double getRateOfInterest() {
+        return 6.5;
+    }
+
+    public void sbiSpecialFeature() {
+        System.out.println("Zero balance account");
+    }
+}
+
+class ICICI extends RbiBank {
+    @Override
+    public double getRateOfInterest() {
+        return 7.5;
+    }
+}
+
+class HDFC extends RbiBank {
+    @Override
+    public double getRateOfInterest() {
+        return 9.5;
+    }
+
+    public void hdfcSpecialFeature() {
+        System.out.println("High interest savings account");
+    }
+}
+
+public class bank {
+    public static void main(String[] args) {
+        RbiBank rb = new RbiBank();
+        RbiBank rb1 = new Sbi(); // upcasting
+        Sbi sb1 = new Sbi();     // same type
+        ICICI ic1 = new ICICI();
+        HDFC hd1 = new HDFC();
+
+        sb1.sbiSpecialFeature();  
+
+        System.out.println("RBI Rate of Interest: " + rb.getRateOfInterest());
+        System.out.println("New RBI Rate of Interest : " + rb1.getRateOfInterest());
+        System.out.println("SBI Rate of Interest: " + sb1.getRateOfInterest());
+        System.out.println("ICICI Rate of Interest: " + ic1.getRateOfInterest());
+        System.out.println("HDFC Rate of Interest: " + hd1.getRateOfInterest());
+
+        hd1.hdfcSpecialFeature(); 
+    }
+}
+
+
+
+output:
+Zero balance account
+RBI Rate of Interest: 5.0
+New RBI Rate of Interest (SBI via upcasting): 6.5
+SBI Rate of Interest: 6.5
+ICICI Rate of Interest: 7.5
+HDFC Rate of Interest: 9.5
+High interest savings account
+
