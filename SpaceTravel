@@ -1,0 +1,27 @@
+package oops.navya;
+
+public class SpaceTravel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 double distanceToMoon = 384400; //in km
+		    float speed = 27.5f;   //   km/sec
+		    byte crewMember = 3;
+		    boolean oxygenAvailable = true;
+		    char rocketCode = 'w';
+		    double timeTravel = distanceToMoon/(speed*3600);
+		         System.out.println("RocketCode: " +rocketCode);
+		         System.out.println("CrewMember: " + crewMember);
+		         System.out.println(" OxygenAvailable"+ oxygenAvailable);
+		         System.out.println(" Travel Time"+ timeTravel+"hours ");
+		         
+	}
+
+}
+
+
+output:
+RocketCode: w
+CrewMember: 3
+ OxygenAvailabletrue
+ Travel Time3.882828282828283hours 
