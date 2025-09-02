@@ -1,0 +1,40 @@
+package oops.navya;
+
+public class RoadMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//non primitive
+		String StudentName="navya";
+		String[] roadMap= {
+				"1st year : master program fundamentals",
+				"2nd year : explore on ai,data science or cyber security",
+				"3rd year : internship at tech company",
+				"4th year : innovative project",
+				"after b.tech: job in tech company",
+				};
+         System.out.println("++++++++++++++++++");
+         System.out.println("    carrer road map   ");
+         System.out.println("+++++++++++++++++++++");
+         System.out.println("   name:" + StudentName);
+         
+         
+         for(String step: roadMap) 
+         {
+        	 System.out.println("=>"+step);
+         }
+	}
+
+}
+
+
+
+
+output:
++++++++++++++++++++++
+   name:navya
+=>1st year : master program fundamentals
+=>2nd year : explore on ai,data science or cyber security
+=>3rd year : internship at tech company
+=>4th year : innovative project
+=>after b.tech: job in tech company
