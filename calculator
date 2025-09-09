@@ -1,0 +1,38 @@
+package com.u8;
+import java.util.Scanner;
+public class calculator 
+{	public static void main(String[] args)
+ { Scanner read=new Scanner(System.in);
+   int a=read.nextInt();
+   int b=read.nextInt();
+   int o=read.nextInt();
+   switch(o)
+   {
+   case 1:
+	   System.out.println("add:"+(a+b));
+	   break;
+   case 2:
+	   System.out.println("sub:"+(a-b));
+	   break;
+   case 3:
+	   System.out.println("product:"+(a*b));
+	   break;
+   case 4:
+	   System.out.println("division:"+a/b);
+	   break;
+   case 5:
+	   System.out.println("remainder:"+(a%b));
+	   break;
+   default:
+	   System.out.println("default input");
+   }
+ }
+}
+
+
+output:
+8
+2
+3
+product:16
+
