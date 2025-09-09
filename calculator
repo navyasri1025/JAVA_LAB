@@ -3,8 +3,11 @@ import java.util.Scanner;
 public class calculator 
 {	public static void main(String[] args)
  { Scanner read=new Scanner(System.in);
+  System.out.print("enter a:");
    int a=read.nextInt();
+   System.out.print("enter b:");
    int b=read.nextInt();
+   System.out.print("enter operator:");
    int o=read.nextInt();
    switch(o)
    {
@@ -31,8 +34,8 @@ public class calculator
 
 
 output:
-8
-2
-3
-product:16
+enter a:4
+enter b:6
+enter operator:3
+product:24
 
