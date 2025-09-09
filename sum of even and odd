@@ -1,0 +1,35 @@
+package com.u8;
+import java.util.Scanner;
+public class sumOfEvenAndOdd
+{	public static void main(String[] args)
+ {		
+	Scanner read=new Scanner(System.in);
+	int size=read.nextInt();
+	int[] arr=new int[size];
+	int sumEven=0,sumOdd=0;
+	for(int i=0;i<size;i++)
+	{
+		arr[i]=read.nextInt();
+		if(arr[i]%2==0)
+		{
+			sumEven+=arr[i];
+		}
+		else
+		{
+			sumOdd+=arr[i];
+		}
+	}
+	System.out.println("sum of even:" + sumEven);
+	System.out.println("sum of odd:" + sumOdd);
+ }
+
+}
+  output:
+  5
+1
+2
+3
+4
+5
+sum of even:6
+sum of odd:9
