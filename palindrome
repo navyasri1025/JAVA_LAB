@@ -1,0 +1,37 @@
+package com.u8;
+import java.util.*;
+
+public class palindrome
+{	public static void main(String[] args)
+ {
+	Scanner read=new Scanner(System.in);
+	System.out.print("enter word:");
+	String word=read.nextLine();
+	 int left=0;
+	 int right=word.length()-1;
+	 boolean ispalindrome=true;
+	 while(left<right)
+	 {
+		if(word.charAt(right)!=word.charAt(left))
+		{
+			ispalindrome=false;
+			break;
+		}
+		left++;
+		right--;
+	 }
+	if(ispalindrome)
+	{
+	  System.out.println("it is palindrome");	
+	}
+	else
+	{
+		 System.out.println("it is not palindrome");	
+	}
+}
+
+}
+
+output:
+enter word:navya
+it is not palindrome
