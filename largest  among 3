@@ -1,0 +1,32 @@
+package com.u8;
+import java.util.*;
+public class bigAmong3 {
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		System.out.print(" enter a=");
+		int a=read.nextInt();
+		System.out.print(" enter b=");
+		int b=read.nextInt();
+		System.out.print(" enter c=");
+		int c=read.nextInt();
+		if(a>b && a>c)
+		{
+			System.out.print("a is biggest");
+		}
+		else if(b>c)
+		{
+			System.out.print("b is biggest");
+		}
+		else
+		{
+			System.out.print("c is biggest");
+		}
+	}
+
+}
+output:
+ enter a=5
+ enter b=7
+ enter c=2
+b is biggest
