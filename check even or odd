@@ -1,0 +1,22 @@
+package com.u8;
+import java.util.*;
+public class evenOrOdd {
+
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		System.out.print(" enter num=");
+		int num=read.nextInt();
+		if(num%2==0) {
+			System.out.print("num is even");
+		}
+		else
+		{
+			System.out.print("num is odd");
+		}
+	}
+
+}
+
+
+ enter num=9
+num is odd
