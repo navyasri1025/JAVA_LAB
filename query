@@ -1,0 +1,17 @@
+package com.u8;
+public class query {
+	public static void main(String[] args) {
+		boolean exam=true;
+		if(exam)
+		{
+			System.out.println("go and study");
+		}
+		else
+		{
+			System.out.println("enjoy by watcjing reels");
+		}
+	}
+
+}
+   output:
+go and study
