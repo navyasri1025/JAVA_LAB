@@ -1,0 +1,22 @@
+package com.u8;
+import java.util.*;
+public class swap {
+	public static void main(String[] args) {
+		Scanner read=new Scanner(System.in);
+		System.out.print(" enter a=");
+		int a=read.nextInt();
+		System.out.print(" enter b=");
+		int b=read.nextInt();	
+		System.out.print("numbers after swaping");
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.print(" a="+a);
+		System.out.print(" b="+b);
+	}
+
+}
+  output:
+enter a=6
+ enter b=3
+numbers after swaping a=3 b=6
